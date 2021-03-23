@@ -1,0 +1,37 @@
+Datatype-FormatSpecifier-Bytes
+
+signedChar-%c-1
+unsignedChar-%c-1
+int-%d-4
+unsignedInt-%u-4
+short-%hd-2
+unsigned-%u-4     (same as unsigned int)
+long-%ld-8
+unsignedLong-%lu-8
+
+
+code used:
+
+#include <stdio.h>
+
+int main()
+{
+    datatype x=value;
+    printf("%specifier\n",x);
+    return 0;
+}
+
+Here all types were input with wrong specifiers to get correct specifier from the compiler prompt.
+
+To get size:
+
+#include <stdio.h>
+
+int main()
+{
+    datatype x=value;
+    printf("%lu\n",sizeof(x));
+    return 0;
+}
+
+to get size this was used
