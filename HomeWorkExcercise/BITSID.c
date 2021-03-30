@@ -9,17 +9,17 @@ int main()
     if (campus == 'G')
     {
         printf("Your BITS email is: ");
-        printf("f%d%d@goa.bits-pilani.ac.in\n", year, id);
+        printf("f%d%04d@goa.bits-pilani.ac.in\n", year, id);
     }
     else if (campus == 'P')
     {
         printf("Your BITS email is: ");
-        printf("f%d%d@pilani.bits-pilani.ac.in\n", year, id);
+        printf("f%d%04d@pilani.bits-pilani.ac.in\n", year, id);
     }
     else if (campus == 'H')
     {
         printf("Your BITS email is: ");
-        printf("f%d%d@hyd.bits-pilani.ac.in\n", year, id);
+        printf("f%d%04d@hyd.bits-pilani.ac.in\n", year, id);
     }
     else
     {
