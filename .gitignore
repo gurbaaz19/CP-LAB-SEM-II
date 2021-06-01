@@ -1,1 +1,7 @@
 .DS_Store
+.vscode/launch.json
+.gitignore
+LAB6/prime_sieve.dSYM/Contents/Info.plist
+LAB7/flip.dSYM/Contents/Info.plist
+LAB7/flip.dSYM/Contents/Resources/DWARF/flip
+.vscode/tasks.json
