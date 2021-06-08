@@ -76,9 +76,9 @@ int main()
   int A[100];
   int n, k;
 
-  printf("Enter number integers: ");
+  printf("Enter n: ");
   scanf(" %d", &n);
-  printf("Enter K: ");
+  printf("Enter k: ");
   scanf(" %d", &k);
   for (int i = 0; i < n; i++)
   {
