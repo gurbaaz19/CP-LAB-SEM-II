@@ -8,21 +8,23 @@ typedef int FType(int[], int, int, int);
 int linSearch(int A[], int x, int y, int k)
 {
   int flag = 0;
-  for (int i = x; i <= y; i++)
+  int i;
+  for (i = x; i <= y; i++)
   {
     if (A[i] == k)
     {
       flag = 1;
+      break;
     }
   }
 
   if (flag == 1)
   {
-    return 1;
+    return i;
   }
   else
   {
-    return 0;
+    return -1;
   }
 }
 
@@ -41,8 +43,7 @@ int binSearch(int A[], int x, int y, int k) // doubt
 
 int search(FType f, int A[], int n, int k)
 {
-  f(A,0,n,k);
-  return 0;
+  return f(A, 0, n, k);
 }
 
 int isSort(int A[], int n)
@@ -91,11 +92,27 @@ int main()
 
   if (sorted == 1)
   {
-    search(binSearch,A,n-1,k);
+    int result = search(binSearch, A, n - 1, k);
+    if (result == -1)
+    {
+      printf("K not found");
+    }
+    else
+    {
+      printf("The index of A[] at which %d is located is %d\n", k, result);
+    }
   }
   else
   {
-    search(linSearch,A,n-1,k);
+    int result = search(linSearch, A, n - 1, k);
+    if (result == -1)
+    {
+      printf("K not found");
+    }
+    else
+    {
+      printf("The index of A[] at which %d is located is %d\n", k, result);
+    }
   }
 
   return 0;
